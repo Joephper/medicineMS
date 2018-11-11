@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>万家制药</title>
+<link rel="stylesheet" href="../css/index.css">
+<script language="javascript">
+
+	function checkForm(form) 
+	{
+		if(form.username.value == "") {
+			alert("用户名不能为空!");
+			form.username.focus();
+
+			return false;
+		}
+
+		if(form.password.value == "") {			
+			alert("密码不能为空!");
+			form.password.focus();
+
+			return false;		
+		
+		}		
+		return true;
+	}
+</script>
+</head>
+
+<body> 
+	<div class="main_box">
+		<div class="login_box">
+			<div class="login_logo">
+				<img src="../image/zhiyaologo.png" >
+			</div>
+			
+			<div class="login_form">
+				<form  action="../php/login.php" method="post" onsubmit="return checkForm(this);" >
+					<div class="form-group">
+						<label for="j_username" class="t">账　号：</label>
+						<input id="username" value="" name="phone"  type="text" class="form-control x319 in" 
+						autocomplete="off" placeholder="请输入手机号">
+					</div>
+					<div class="form-group">
+						<label class="t"></label>
+						<a href="addusers.html">注册</a>
+					</div>
+					<div class="form-group">
+						<label for="j_password" class="t">密　码：</label> 
+						<input id="password" value="" name="password" type="password" 
+						class="password form-control x319 in" placeholder="请输入密码">
+					</div>
+
+					<div class="form-group">
+						<label class="t"></label>
+						<a href="#">忘记密码</a>
+					</div>
+				
+					<div class="form-group space">
+						<label class="t"></label>　　　
+
+						<button type="submit" name="submit" style="font-size: 24px;background-color:#0051F4; ">登 录</button>
+
+					</div>
+				</form>
+			</div>
+		</div>
+		
+</div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+@charset "utf-8";
+*{margin:0 auto;}
+.content
+{
+	margin-top:150px;
+	width:850px;
+	height:555px;
+	border:1px solid gray;
+}
+.head
+{
+	line-height:50px;
+	color:white;
+	background-color:#00BFFF;
+	width:850px;
+	height:50px;
+
+}
+.page{
+	position:absolute;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+	width:550px;
+	height:505px;
+	border:1px solid gray;
+}
+.gezi
+{
+	margin-left:50px;
+	position:relative;
+	float:left;
+    width:480px;
+	height:50px;
+}
+.span
+{
+	width:200px;
+	height:50px;
+	position:relative;
+	float:right;
+}
+.button
+{
+	margin-top:370px;
+	margin-left:190px;
+}

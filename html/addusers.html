@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>注册用户</title>
+<link rel="stylesheet" href="../css/addusers.css">
+
+<script language="javascript" type="text/javascript" src="../js/addusers.js" charset="gb2312">   
+	</script>  
+</head>
+
+<body>
+<div class="content">
+<div class="head">欢迎注册万家制药！客户可享受万家给予的便利！</div>
+<div class="page">
+<form action="../php/addusers.php" method="post" onSubmit="return check(this)">
+
+<div class="gezi"><span style="display:inline-block;width:100px;text-align:right;">*用户名:</span>
+	<input type="text" name="name" onblur="checkUserName(this.value);">
+	<div class="span"><span id="checkUserNameResult" style="color: red "></span> </div>
+</div>
+<div class="gezi"><span style="display:inline-block;width:100px;text-align:right;">*性别:</span>
+	男<input type="radio" name="sex" value="男" checked>女<input type="radio" value="女" name="sex">
+</div>
+<div class="gezi"><span style="display:inline-block;width:100px;text-align:right;">*年龄:</span>
+	<input type="text" name="age" onblur="checkUserAge(this.value);">
+	<div class="span"><span id="checkUserAgeResult" style="color: red "></span> </div>
+</div>
+<div class="gezi"><span style="display:inline-block;width:100px;text-align:right;">*手机号码:</span>
+	<input type="text" name="phone" onblur="checkUserPhone(this.value);">
+	<div class="span"><span id="checkUserPhoneResult" style="color: red "></span> </div>
+</div>
+<div class="gezi"><span style="display:inline-block;width:100px;text-align:right;">*身份证号码:</span>
+	<input type="text" name="identity" onblur="checkUserIdentity(this.value);">
+	<div class="span"><span id="checkUserIdentityResult" style="color: red "></span> </div>
+</div>
+<div class="gezi"><span style="display:inline-block;width:100px;text-align:right;">*家庭地址:</span>
+	<input type="text" name="address" style="width:300px;">
+</div>
+<div class="gezi"><span style="display:inline-block;width:100px;text-align:right;">*密码:</span>
+	<input type="password" name="password" onblur="checkUserPassword(this.value);">
+	<div class="span"><span id="checkUserPasswordResult" style="color: red "></span> </div>
+</div>
+<div class="gezi"><span style="display:inline-block;width:100px;text-align:right;">*确认密码:</span>
+	<input type="password" name="re_password">
+</div>
+<div class="button">
+<input style="width:70px;height:30px;" type="submit" value="注册">
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>

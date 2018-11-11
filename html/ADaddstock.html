@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/ADaddstock.css">
+
+<script language="javascript" type="text/javascript" src="../js/addstock.js" charset="gb2312">   
+	</script>  
+</head>
+
+<body>
+<p>仓库信息管理 > 库存信息管理 > 添加库存记录</p>
+<div class="page">
+<form action="../php/ADaddstock.php" method="post" onSubmit="return check(this)">
+
+<div class="gezi"><span style="display:inline-block;width:100px;text-align:right;">*药品编号:</span>
+	<input type="text" name="mid">
+</div>
+<div class="gezi"><span style="display:inline-block;width:100px;text-align:right;">*商品批号:</span>
+	<input type="text" name="ino">
+</div>
+<div class="gezi"><span style="display:inline-block;width:100px;text-align:right;">*总数量:</span>
+	<input type="text" name="snum">盒
+</div>
+
+<div class="button">
+<input style="width:70px;height:30px;" type="submit" value="添加">
+</div>
+</form>
+</div>
+<div class="footer">
+温馨提示：请确认信息无误后再提交！
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>万家制药管理员操作平台</title>
+<link rel="stylesheet" type="text/css" href="../css/SimpleTree.css"/>
+<script type="text/javascript" src="../js/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="../js/SimpleTree.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".st_tree").SimpleTree({
+		click:function(a){
+			if(!$(a).attr("hasChild"))
+				$(a).window.location.href;
+		}
+	});
+});
+</script>
+</head>
+<body style="background-color:#eaedef;">
+<hr style="height:10px;border:none;border-top:10px groove white;">
+<div class="head">
+<img src="../image/ms.png" width="220" height="70.4">
+</div>
+<hr style="height:10px;border:none;border-top:10px white groove;">
+<div class="st_tree">
+<ul>
+	<li><a href="../php/top.php" target ="showframe">首页</a></li>
+	<li><a href="#" target ="showframe">药品信息管理</a></li>
+    <ul>
+		<li><a href="ADaddmedicine.html" target ="showframe">添加药品信息</a></li>
+		<li><a href="../php/agencyallmedicine.php" target ="showframe">浏览药品信息</a></li>
+	</ul>
+	<li><a href="#">仓库信息管理</a></li>
+    <ul>
+		<li><a href="#">进货记录管理</a></li>
+        <ul>
+            <li><a href="ADaddinput.html" target ="showframe">添加进货记录</a></li>
+            <li><a href="../php/agencyallinput.php" target ="showframe">浏览进货记录</a></li>
+        </ul>
+        <li><a href="#">销售记录管理</a></li>
+        <ul>
+            <li><a href="ADaddoutput.html" target ="showframe">添加销售记录</a></li>
+            <li><a href="../php/agencyalloutput.php" target ="showframe">浏览销售记录</a></li>
+        </ul>
+	</ul>
+	<li><a href="../php/agencyallstock.php" target ="showframe">浏览库存信息</a></li>
+</ul>
+</div>
+
+</body>
+</html>

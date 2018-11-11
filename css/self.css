@@ -1,0 +1,72 @@
+@charset "utf-8";
+*{
+	margin: 0 auto;
+}
+body{
+	background-image:url('../image/bg.jpg');
+	background-size:cover; 
+	background-repeat:no-repeat;
+}
+.nav{
+width:900px;
+height:50px;
+}
+.nav ul{
+width:760px;/*设置元素宽度为980px*/
+border:1px solid blue;/*设置一个颜色为#000，宽度为1px的边框*/
+}
+.nav ul li{
+float:left;/*让li元素左浮动*/
+list-style:none; /*去除li元素黑点*/
+}
+.nav ul li a{
+width:100px;/*设置元素宽为80px*/
+height:38px;/*设置高度为28px*/
+line-height:38px;/*设置行距为28px，让文字在每行的中间位置*/
+background:blue;/*设置元素的背景为红色*/
+color:#FFF;/*文字颜色是白色*/
+margin:5px 10px;
+font-size:18px;/*用12号字*/
+display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+text-align:center;/*让文本居中*/
+text-decoration:none; /*去掉下划线*/
+}
+.nav ul li a:hover{ /*这个大概的意思就是当鼠标放到这个a元素的上面时，这个a元素的样式就按下面的代码执行*/
+width:98px;
+height:36px;
+line-height:38px;
+border:1px solid red;
+color:red;
+background:#FFF;
+}
+.page{
+	background-color:white;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+	width:550px;
+	height:505px;
+	
+}
+.gezi
+{
+	margin-left:50px;
+	position:relative;
+	float:left;
+    width:480px;
+	height:50px;
+}
+.gezi input{
+	background-image:url('../image/bg.jpg');
+}
+.button
+{
+	margin-top:370px;
+	margin-left:210px;
+}
+.button input{
+	background-image: url(../image/input.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
